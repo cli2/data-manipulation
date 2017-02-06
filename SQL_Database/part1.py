@@ -23,8 +23,6 @@ with open(r'movie_actors_data.txt','r') as f:
         movies.append((imdb_id,title,year,rating))
         for i in actor:
             movie_actor.append((imdb_id,i))
-        # print movies,movie_actor,movie_genre
-        # break
 
 # create tables
 with sqlite.connect(r'hw3.db') as con:
